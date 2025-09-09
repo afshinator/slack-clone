@@ -1,12 +1,15 @@
 import express from "express";
+import { ENV } from "./config/env.js";
 
 
 const app = express();
 
-app.get('/', (req,res) => {
-  res.send("hello world 369")
-})
+const PORT = ENV.PORT || 5001;
 
-app.listen(5001, () => {
-  console.log("Server started on port:", 5001);
+app.get("/", (req, res) => {
+  res.send("hello world 369");
+});
+
+app.listen(PORT, () => {
+  console.log("Server started on port:", PORT);
 });
