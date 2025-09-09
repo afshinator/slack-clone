@@ -3,5 +3,12 @@ import "dotenv/config";
 export const ENV = {
   PORT: process.env.PORT || 5001,
   MONGO_URI: process.env.MONGO_URI,
-  NODE_ENV: process.env.NODE_ENV || "development",
+  NODE_ENV: process.env.NODE_ENV,
 };
+
+/*
+afshinator_db_user
+9ueWvwUlT2GnIBAY
+
+
+*/
